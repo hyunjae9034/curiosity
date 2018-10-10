@@ -11,13 +11,14 @@ class NewList extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.userId);
-    this.props.ReadMessages({
-      mutation: ReadMessages,
-      variables: {
-        receiverId: this.props.userId,
-      },
-    });
+    setTimeout(() => {
+      this.props.ReadMessages({
+        mutation: ReadMessages,
+        variables: {
+          receiverId: this.props.userId,
+        },
+      });
+    }, 5000);
   }
 
   displayMessages() {

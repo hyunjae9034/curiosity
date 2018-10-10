@@ -48,6 +48,6 @@ app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '/../client/dist/index.html'));
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('listening to port 3000');
 });
