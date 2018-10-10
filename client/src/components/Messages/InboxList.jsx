@@ -26,6 +26,7 @@ class InboxList extends Component {
               post={post}
               onSelect={this.onSelect}
               getMessages={this.props.getMessages}
+              replyFormat={this.props.replyFormat}
             />
           );
         });
