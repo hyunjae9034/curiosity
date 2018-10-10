@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './components/Auth/App.jsx';
 
 const client = new ApolloClient({
-  uri: `http://hrcuriosity.herokuapp.com:${process.env.PORT}/graphql`,
+  uri: `http://hrcuriosity.herokuapp.com/graphql`,
 });
 
 class Index extends Component {
